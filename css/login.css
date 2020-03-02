@@ -1,0 +1,648 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+/*pure button*/
+/*!
+Pure v1.0.1
+Copyright 2013 Yahoo!
+Licensed under the BSD License.
+https://github.com/pure-css/pure/blob/master/LICENSE.md
+*/
+.pure-button .pure-button2 {
+  /* Structure */
+  display: inline-block;
+  zoom: 1;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Firefox: Get rid of the inner focus border */
+.pure-button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+/* Inherit .pure-g styles */
+.pure-button-group {
+  letter-spacing: -0.31em;
+  /* Webkit: collapse white-space between units */
+  *letter-spacing: normal;
+  /* reset IE < 8 */
+  *word-spacing: -0.43em;
+  /* IE < 8: collapse white-space between units */
+  text-rendering: optimizespeed;
+  /* Webkit: fixes text-rendering: optimizeLegibility */ }
+
+.opera-only :-o-prefocus,
+.pure-button-group {
+  word-spacing: -0.43em; }
+
+.pure-button-group .pure-button .pure-button2 {
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto; }
+
+/*csslint outline-none:false*/
+.pure-button {
+  font-family: inherit;
+  font-size: 100%;
+  padding: 0.1em 1em;
+  color: #FFFFFF;
+  /* rgba not supported (IE 8) */
+  color: white;
+  /* rgba supported */
+  border: 1px solid #999;
+  /*IE 6/7/8*/
+  border: none rgba(0, 0, 0, 0);
+  /*IE9 + everything else*/
+  background-color: #AAAAAA;
+  text-decoration: none;
+  border-radius: 3px;
+  width: 70px;
+  height: 32px; }
+
+.pure-button2 {
+  font-family: inherit;
+  font-size: 100%;
+  padding: 0.1em 1em;
+  color: #FFFFFF;
+  /* rgba not supported (IE 8) */
+  color: white;
+  /* rgba supported */
+  border: 1px solid #999;
+  /*IE 6/7/8*/
+  border: none rgba(0, 0, 0, 0);
+  /*IE9 + everything else*/
+ /*IE9 + everything else*/
+ background: #9870FC;
+ /* Old browsers */
+ background: -moz-linear-gradient(45deg, #DC2F2F 0%, #9870FC 100%);
+ /* FF3.6-15 */
+ background: -webkit-linear-gradient(45deg, #DC2F2F 0%, #9870FC 100%);
+ /* Chrome10-25,Safari5.1-6 */
+ background: -o-linear-gradient(45deg, #DC2F2F 0%, #9870FC 100%);
+ background: linear-gradient(45deg, #DC2F2F 0%, #9870FC 100%);
+ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  text-decoration: none;
+  border-radius: 3px;
+  width: 70px;
+  height: 32px; }
+
+.pure-button2:hover {
+  background: #000 !important; }
+
+.pure-button-hover,
+.pure-button:hover,
+.pure-button:focus {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(40%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.1)));
+  background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+  background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1)); }
+
+.pure-button:focus {
+  outline: 0; }
+
+.pure-button-active,
+.pure-button:active {
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+  border-color: #000; }
+
+.pure-button[disabled],
+.pure-button-disabled,
+.pure-button-disabled:hover,
+.pure-button-disabled:focus,
+.pure-button-disabled:active {
+  border: none;
+  background-image: none;
+  /* csslint ignore:start */
+  filter: alpha(opacity=40);
+  /* csslint ignore:end */
+  opacity: 0.40;
+  cursor: not-allowed;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  pointer-events: none; }
+
+.pure-button-hidden {
+  display: none; }
+
+.pure-button-primary,
+.pure-button-selected,
+a.pure-button-primary,
+a.pure-button-selected {
+  background-color: #0078e7;
+  color: #fff; }
+
+/* Button Groups */
+.pure-button-group .pure-button .pure-button2 {
+  margin: 0;
+  border-radius: 0;
+  border-right: 1px solid #111;
+  /* fallback color for rgba() for IE7/8 */
+  border-right: 1px solid rgba(0, 0, 0, 0.2); }
+
+.pure-button-group .pure-button:first-child {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px; }
+
+.pure-button-group .pure-button:last-child {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-right: none; }
+
+/*主要版面色彩*/
+/* 主要色系深棕色*/
+/*襯色橘色*/
+/*body*/
+body {
+  font-family: Microsoft JhengHei;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
+.wrap {
+  max-width: 1024px;
+  background-color: #f2f3f7;
+  margin: 0 auto; }
+
+/*網頁字型大小*/
+h1 {
+  font-size: 36px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 20px; }
+
+h4 {
+  font-size: 18px; }
+
+/*連結未點擊預設顏色*/
+a {
+  color: #FFFFFF; }
+
+/*清除浮動*/
+.clearfix {
+  clear: both; }
+
+/*rwd @media設定*/
+.header {
+  background-color: #000000;
+  position: relative; }
+  @media (max-width: 768px) {
+    .header {
+      padding-bottom: 30px; } }
+
+/*rwd @media設定*/
+.logo {
+  float: left;
+  margin-top: 16px;
+  margin-left: 10px; }
+  @media (max-width: 568px) {
+    .logo {
+      margin-top: 25px; } }
+
+.logo a {
+  display: block;
+  width: 250px;
+  text-indent: -99999px;
+  height: 48px;
+  background: url(../img/logo_w.png) no-repeat; }
+  @media (max-width: 768px) {
+    .logo a {
+      width: 125px;
+      height: 24px;
+      background: url(../img/logo_l_120.png) no-repeat; } }
+
+.menu {
+  float: right;
+  padding-top: 5px;
+  margin-right: 48px;
+  margin-top: 16px; }
+  @media (max-width: 768px) {
+    .menu {
+      margin-right: 10px; } }
+  @media (max-width: 568px) {
+    .menu {
+      max-height: 0px;
+      overflow: hidden;
+      /*隱藏選單結束*/
+      -webkit-transition: max-height 2.3s;
+      -o-transition: max-height 2.3s;
+      transition: max-height 2.3s;
+      margin-top: 1px;
+      /*絕對定位疊在網頁上*/
+      position: absolute;
+      z-index: 100;
+      /*header 50px+1px boder 線條*/
+      top: 49px;
+      left: 0;
+      right: 0;
+      background: #000000;
+      margin-right: 0px; } }
+
+.showmenu {
+  display: none; }
+  @media (max-width: 568px) {
+    .showmenu {
+      display: block;
+      float: right;
+      height: 24px;
+      width: 24px;
+      color: #FFFFFF;
+      margin-top: -25px;
+      margin-right: 22px;
+      font-size: 24px; } }
+
+.menu li {
+  float: left;
+  color: #FFFFFF;
+  margin-left: 48px;
+  font-size: 18px; }
+  @media (max-width: 568px) {
+    .menu li {
+      float: none;
+      border-bottom: 1px dashed #FFFFFF;
+      line-height: 2;
+      margin-bottom: 10px;
+      margin-left: 15px; } }
+
+
+
+.menu li a {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+
+
+  .menu a:hover {
+    color: #DC2F2F;
+  }
+  
+
+/*jQ點擊後動態在 body 加上 class */
+@media (max-width: 568px) {
+  .menu-show .menu {
+    max-height: 500px; } }
+
+/*rwd @media設定*/
+.btn {
+  color: #FFFFFF;
+  width: 100%;
+  height: 410px;
+  background-image: url(../img/header2_desktop_1024.png);
+  background-repeat: no-repeat;
+ }
+  @media (max-width: 768px) {
+    .btn {
+      width: 100%;
+      height: 410px;
+      background: url(../img/header2_desktop_768.png);
+      background-repeat: no-repeat;
+      margin-top: -80px;
+     } }
+  @media (max-width: 568px) {
+    .btn {
+    
+      width: 100%;
+   
+      background: url(../img/header2_mobile.png);
+      background-repeat: no-repeat;
+      } }
+
+.box {
+  width: 460px;
+  height: 152px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  margin-left: 295px;
+  margin-top: 67px;
+  padding-top: 15px; }
+  @media (max-width: 768px) {
+    .box {
+    
+      width: 300px;
+      height: 200px;
+      margin: 80px auto; 
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-top: 120px;
+      margin-left: 25%;} }
+
+      @media (max-width: 568px) {
+        .box {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          margin-left: 15%;
+          margin-top: 100px;
+        }
+      }
+      .box .slogan {
+        font-size: 30px;
+        margin-top: 20px;
+        text-align: center;
+      }
+      
+.box h1 {
+  margin-top: 20px;
+  text-align: center; }
+  @media (max-width: 768px) {
+    .box h1 {
+      position: relative;
+      top: 30px; } }
+  @media (max-width: 568px) {
+    .box h1 {
+      position: relative;
+      top: 40px; } }
+
+.box p {
+  margin-top: 16px;
+  text-align: center; }
+  @media (max-width: 768px) {
+    .box p {
+      position: relative;
+      top: 30px; } }
+  @media (max-width: 568px) {
+    .box p {
+      position: relative;
+      top: 32px; } }
+
+.p2 {
+  margin-top: 10px;
+  text-align: center; }
+  @media (max-width: 768px) {
+    .p2 {
+      position: relative;
+      top: 37px; } }
+  @media (max-width: 568px) {
+    .p2 {
+      position: relative;
+      top: 38px; } }
+
+/*主要版面色彩*/
+/* 主要色系深棕色*/
+/*襯色橘色*/
+/*rwd @media設定*/
+.login {
+  width: 100%;
+  margin-top: 20px;
+  position: static; }
+
+.login_logo a {
+  margin: 0 auto;
+  display: block;
+  text-indent: -999999px;
+  width: 245px;
+  height: 49px;
+  background: url(../img/logo_2.png) no-repeat; }
+
+.login h3 {
+  text-align: center;
+  color: #383737;
+  font-weight: bold;
+  margin-top: 5px; }
+
+.login_in {
+  width: 300px;
+  height: 273px;
+  margin: 0 auto;
+  margin-top: 35px;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-top: 2px #000000  solid;
+  position: relative; }
+
+.login_in h4 {
+  text-align: center;
+  color: #383737;
+  font-weight: bold;
+  margin-top: 12px; }
+
+.mail-text {
+  color: #383737;
+  margin-top: 16px;
+  margin-left: 15px; }
+
+.imail {
+  width: 270px;
+  height: 32px;
+  margin-left: 15px;
+  margin-top:10px; 
+margin-bottom: 15px;}
+
+.mail {
+  position: absolute;
+  left: 25px;
+  top: 65px; }
+
+.password-text {
+  color: #383737;
+  margin-top: 16px;
+  margin-left: 16px; }
+
+.ipass {
+  width: 270px;
+  height: 32px;
+  margin-left: 15px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+
+.pass {
+  position: absolute;
+  left: 25px;
+  top: 140px; 
+ }
+
+.loseID {
+  color: #383737;
+  margin-top: 5px;
+  margin-left: 16px; }
+
+.entry {
+  float: right;
+  margin-right: 15px;
+  margin-top: 30px; }
+
+/*主要版面色彩*/
+/* 主要色系深棕色*/
+/*襯色橘色*/
+/*rwd @media設定*/
+
+.footer {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f2f3f7;
+  margin-top: 50px;
+  color: #383737;
+}
+
+.about {
+  float: left;
+  margin-bottom: 44px;
+}
+
+.about_title {
+  margin-top: 50px;
+  margin-left: 43px;
+}
+
+.about_article {
+  margin-top: 16px;
+  width: 299px;
+  line-height: 1.5;
+  margin-left: 43px;
+}
+
+.about_contact {
+  float: left;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+.about_contact ul {
+  margin-top: 16px;
+  line-height: 1.5;
+  list-style-type: disc;
+}
+
+.footer_logo {
+  float: right;
+}
+
+.footer_logo {
+  margin-left: 125px;
+  margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+  .footer_logo {
+    float: left;
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 568px) {
+  .footer_logo {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+.footer_logo a {
+  display: block;
+  text-indent: -999999px;
+  width: 245px;
+  height: 49px;
+  background: url(../img/logo_l.png) no-repeat;
+}
+
+.social {
+  margin-right: 18px;
+}
+
+@media (max-width: 768px) {
+  .social {
+    margin-left: 150px;
+  }
+}
+
+.social-img {
+  height: 31px;
+  width: 31px;
+}
+
+.social-google,
+.social-twitter,
+.social-facebook {
+  float: right;
+  margin-right: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .social-google,
+  .social-twitter,
+  .social-facebook {
+  }
+}
+
+@media (max-width: 568px) {
+  .social-google,
+  .social-twitter,
+  .social-facebook {
+    margin-top: 40px;
+    float: right;
+  }
+}
+
+.foort_right {
+  float: left;
+}
+
+@media (max-width: 768px) {
+  .foort_right {
+    display: block;
+  }
+}
+
